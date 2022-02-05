@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 18,
+            "activePatchIndex": 21,
             "patches": [
                 {
                     "date": 1644018746342,
@@ -80,6 +80,18 @@
                 {
                     "date": 1644020075286,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -103,13 +103,9 @@\n   background: purple\n }\n \n .todo-row:nth-child(4n + 2) {\n-  background: linear-gradient(\n-    90deg,\n-    rgba(255, 12, 241, 1) 0%,\n-    rgba(250, 0, 135, 1) 100%\n-  );\n+  background: green\n }\n \n .todo-row:nth-child(4n + 3) {\n   background: linear-gradient(\n"
+                },
+                {
+                    "date": 1644089249844,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \n body {\n   background: linear-gradient(\n     90deg,\n-    rgb(8, 8, 8) 0%,\n+    rgb(13, 31, 114) 0%,\n     rgb(8, 8, 8) 100%\n   );\n }\n .todo-app {\n"
+                },
+                {
+                    "date": 1644089287415,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \n body {\n   background: linear-gradient(\n     90deg,\n-    rgb(13, 31, 114) 0%,\n+    rgb(0, 44, 240) 0%,\n     rgb(8, 8, 8) 100%\n   );\n }\n .todo-app {\n"
+                },
+                {
+                    "date": 1644089771761,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,13 +6,9 @@\n     'Lucida Sans', Arial, sans-serif;\n }\n \n body {\n-  background: linear-gradient(\n-    90deg,\n-    rgb(0, 44, 240) 0%,\n-    rgb(8, 8, 8) 100%\n-  );\n+  background: bla;\n }\n .todo-app {\n   display: flex;\n   flex-direction: column;\n"
                 }
             ],
             "date": 1644018746342,
