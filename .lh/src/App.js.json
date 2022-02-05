@@ -1,0 +1,46 @@
+{
+    "sourceFile": "src/App.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1644018479921,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1644018486523,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,10 +5,8 @@\n   return (\n     <div className=\"App\">\n       \n           Learn React\n-        </a>\n-      </header>\n     </div>\n   );\n }\n \n"
+                },
+                {
+                    "date": 1644018510282,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,10 @@\n-import logo from './logo.svg';\n+\n import './App.css';\n \n function App() {\n   return (\n     <div className=\"App\">\n-      \n           Learn React\n     </div>\n   );\n }\n"
+                },
+                {
+                    "date": 1644018610988,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import './App.css';\n \n function App() {\n   return (\n-    <div className=\"App\">\n+    <div className=\"todo-list\">\n           Learn React\n     </div>\n   );\n }\n"
+                },
+                {
+                    "date": 1644018695106,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \n function App() {\n   return (\n     <div className=\"todo-list\">\n-          Learn React\n+          \n     </div>\n   );\n }\n \n"
+                },
+                {
+                    "date": 1644018702805,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \n function App() {\n   return (\n     <div className=\"todo-list\">\n-          \n+          </>\n     </div>\n   );\n }\n \n"
+                },
+                {
+                    "date": 1644018709524,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \n function App() {\n   return (\n     <div className=\"todo-list\">\n-          </>\n+          <To/>\n     </div>\n   );\n }\n \n"
+                },
+                {
+                    "date": 1644018847008,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,12 @@\n-\n+import React from 'react';\n import './App.css';\n+import TodoList from './components/TodoList';\n \n function App() {\n   return (\n     <div className=\"todo-list\">\n-          <To/>\n+          <TodoList/>\n     </div>\n   );\n }\n \n"
+                }
+            ],
+            "date": 1644018479921,
+            "name": "Commit-0",
+            "content": "import logo from './logo.svg';\nimport './App.css';\n\nfunction App() {\n  return (\n    <div className=\"App\">\n      \n          Learn React\n        </a>\n      </header>\n    </div>\n  );\n}\n\nexport default App;\n"
+        }
+    ]
+}

@@ -1,0 +1,90 @@
+{
+    "sourceFile": "src/App.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 18,
+            "patches": [
+                {
+                    "date": 1644018746342,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1644019159803,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \n body {\n   background: linear-gradient(\n     90deg,\n-    rgba(48, 16, 255, 1) 0%,\n+    rgb(95, 83, 175) 0%,\n     rgba(100, 115, 255, 1) 100%\n   );\n }\n .todo-app {\n"
+                },
+                {
+                    "date": 1644019170862,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \n body {\n   background: linear-gradient(\n     90deg,\n-    rgb(95, 83, 175) 0%,\n+    rgb(8, 8, 8) 0%,\n     rgba(100, 115, 255, 1) 100%\n   );\n }\n .todo-app {\n"
+                },
+                {
+                    "date": 1644019179457,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n body {\n   background: linear-gradient(\n     90deg,\n     rgb(8, 8, 8) 0%,\n-    rgba(100, 115, 255, 1) 100%\n+    rgb(8, 8, 8) 100%\n   );\n }\n .todo-app {\n   display: flex;\n"
+                },
+                {
+                    "date": 1644019231677,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,8 +38,9 @@\n }\n \n .todo-form {\n   margin-bottom: 32px;\n+  ali\n }\n \n .todo-input {\n   padding: 14px 32px 14px 16px;\n"
+                },
+                {
+                    "date": 1644019236899,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n }\n \n .todo-form {\n   margin-bottom: 32px;\n-  ali\n+  align-content: ;\n }\n \n .todo-input {\n   padding: 14px 32px 14px 16px;\n"
+                },
+                {
+                    "date": 1644019280125,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n }\n \n .todo-form {\n   margin-bottom: 32px;\n-  align-content: ;\n+  align-content: center;\n }\n \n .todo-input {\n   padding: 14px 32px 14px 16px;\n@@ -97,9 +97,9 @@\n   margin: 4px auto;\n   color: #fff;\n   background: linear-gradient(\n     90deg,\n-    rgba(255, 118, 20, 1) 0%,\n+    rgb(239, 255, 20) 0%,\n     rgba(255, 84, 17, 1) 100%\n   );\n \n   padding: 16px;\n"
+                },
+                {
+                    "date": 1644019296677,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -98,9 +98,9 @@\n   color: #fff;\n   background: linear-gradient(\n     90deg,\n     rgb(239, 255, 20) 0%,\n-    rgba(255, 84, 17, 1) 100%\n+    rgb(69, 17, 255) 100%\n   );\n \n   padding: 16px;\n   border-radius: 5px;\n"
+                },
+                {
+                    "date": 1644019317247,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -97,10 +97,10 @@\n   margin: 4px auto;\n   color: #fff;\n   background: linear-gradient(\n     90deg,\n-    rgb(239, 255, 20) 0%,\n-    rgb(69, 17, 255) 100%\n+    rgb(114, 255, 20) 0%,\n+    rgb(33, 17, 255) 100%\n   );\n \n   padding: 16px;\n   border-radius: 5px;\n"
+                },
+                {
+                    "date": 1644019327251,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -97,9 +97,9 @@\n   margin: 4px auto;\n   color: #fff;\n   background: linear-gradient(\n     90deg,\n-    rgb(114, 255, 20) 0%,\n+    rgb(28, 70, 1) 0%,\n     rgb(33, 17, 255) 100%\n   );\n \n   padding: 16px;\n"
+                },
+                {
+                    "date": 1644019346778,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,13 +95,9 @@\n   justify-content: space-between;\n   align-items: center;\n   margin: 4px auto;\n   color: #fff;\n-  background: linear-gradient(\n-    90deg,\n-    rgb(28, 70, 1) 0%,\n-    rgb(33, 17, 255) 100%\n-  );\n+  background: blue;\n \n   padding: 16px;\n   border-radius: 5px;\n   width: 90%;\n"
+                },
+                {
+                    "date": 1644019377860,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,13 +61,9 @@\n   border: none;\n   border-radius: 0 4px 4px 0;\n   cursor: pointer;\n   outline: none;\n-  background: linear-gradient(\n-    90deg,\n-    rgba(93, 12, 255, 1) 0%,\n-    rgba(155, 0, 250, 1) 100%\n-  );\n+  background: gra;\n   color: #fff;\n   text-transform: capitalize;\n }\n \n"
+                },
+                {
+                    "date": 1644019401317,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,9 +61,9 @@\n   border: none;\n   border-radius: 0 4px 4px 0;\n   cursor: pointer;\n   outline: none;\n-  background: gra;\n+  background: rgb(165, 17, 179);\n   color: #fff;\n   text-transform: capitalize;\n }\n \n"
+                },
+                {
+                    "date": 1644019973013,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -91,9 +91,9 @@\n   justify-content: space-between;\n   align-items: center;\n   margin: 4px auto;\n   color: #fff;\n-  background: blue;\n+  background: pink;\n \n   padding: 16px;\n   border-radius: 5px;\n   width: 90%;\n"
+                },
+                {
+                    "date": 1644019993447,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -100,10 +100,8 @@\n }\n \n .todo-row:nth-child(4n + 1) {\n   background: linear-gradient(\n-    90deg,\n-    rgba(93, 12, 255, 1) 0%,\n     rgba(155, 0, 250, 1) 100%\n   );\n }\n \n"
+                },
+                {
+                    "date": 1644020006471,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -100,9 +100,9 @@\n }\n \n .todo-row:nth-child(4n + 1) {\n   background: linear-gradient(\n-    rgba(155, 0, 250, 1) 100%\n+    rgb(128, 8, 202) 100%\n   );\n }\n \n .todo-row:nth-child(4n + 2) {\n"
+                },
+                {
+                    "date": 1644020028907,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -99,10 +99,9 @@\n   width: 90%;\n }\n \n .todo-row:nth-child(4n + 1) {\n-  background: linear-gradient(\n-    rgb(128, 8, 202) 100%\n+  background: purp\n   );\n }\n \n .todo-row:nth-child(4n + 2) {\n"
+                },
+                {
+                    "date": 1644020057509,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -99,10 +99,9 @@\n   width: 90%;\n }\n \n .todo-row:nth-child(4n + 1) {\n-  background: purp\n-  );\n+  background: purple\n }\n \n .todo-row:nth-child(4n + 2) {\n   background: linear-gradient(\n"
+                },
+                {
+                    "date": 1644020075286,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -103,13 +103,9 @@\n   background: purple\n }\n \n .todo-row:nth-child(4n + 2) {\n-  background: linear-gradient(\n-    90deg,\n-    rgba(255, 12, 241, 1) 0%,\n-    rgba(250, 0, 135, 1) 100%\n-  );\n+  background: green\n }\n \n .todo-row:nth-child(4n + 3) {\n   background: linear-gradient(\n"
+                }
+            ],
+            "date": 1644018746342,
+            "name": "Commit-0",
+            "content": "* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',\n    'Lucida Sans', Arial, sans-serif;\n}\n\nbody {\n  background: linear-gradient(\n    90deg,\n    rgba(48, 16, 255, 1) 0%,\n    rgba(100, 115, 255, 1) 100%\n  );\n}\n.todo-app {\n  display: flex;\n  flex-direction: column;\n  justify-content: start;\n  width: 520px;\n  min-height: 600px;\n  background: #161a2b;\n  text-align: center;\n  margin: 128px auto;\n  border-radius: 10px;\n  padding-bottom: 32px;\n}\n\nh1 {\n  margin: 32px 0;\n  color: #fff;\n  font-size: 24px;\n}\n\n.complete {\n  text-decoration: line-through;\n  opacity: 0.4;\n}\n\n.todo-form {\n  margin-bottom: 32px;\n}\n\n.todo-input {\n  padding: 14px 32px 14px 16px;\n  border-radius: 4px 0 0 4px;\n  border: 2px solid #5d0cff;\n  outline: none;\n  width: 320px;\n  background: transparent;\n  color: #fff;\n}\n\n.todo-input::placeholder {\n  color: #e2e2e2;\n}\n\n.todo-button {\n  padding: 16px;\n  border: none;\n  border-radius: 0 4px 4px 0;\n  cursor: pointer;\n  outline: none;\n  background: linear-gradient(\n    90deg,\n    rgba(93, 12, 255, 1) 0%,\n    rgba(155, 0, 250, 1) 100%\n  );\n  color: #fff;\n  text-transform: capitalize;\n}\n\n.todo-input.edit {\n  border: 2px solid #149fff;\n}\n\n.todo-button.edit {\n  background: linear-gradient(\n    90deg,\n    rgba(20, 159, 255, 1) 0%,\n    rgba(17, 122, 255, 1) 100%\n  );\n  padding: 16px 22px;\n}\n\n.todo-container {\n  display: flex;\n  flex-direction: row;\n  position: relative;\n}\n\n.todo-row {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  margin: 4px auto;\n  color: #fff;\n  background: linear-gradient(\n    90deg,\n    rgba(255, 118, 20, 1) 0%,\n    rgba(255, 84, 17, 1) 100%\n  );\n\n  padding: 16px;\n  border-radius: 5px;\n  width: 90%;\n}\n\n.todo-row:nth-child(4n + 1) {\n  background: linear-gradient(\n    90deg,\n    rgba(93, 12, 255, 1) 0%,\n    rgba(155, 0, 250, 1) 100%\n  );\n}\n\n.todo-row:nth-child(4n + 2) {\n  background: linear-gradient(\n    90deg,\n    rgba(255, 12, 241, 1) 0%,\n    rgba(250, 0, 135, 1) 100%\n  );\n}\n\n.todo-row:nth-child(4n + 3) {\n  background: linear-gradient(\n    90deg,\n    rgba(20, 159, 255, 1) 0%,\n    rgba(17, 122, 255, 1) 100%\n  );\n}\n\n.icons {\n  display: flex;\n  align-items: center;\n  font-size: 24px;\n  cursor: pointer;\n}\n\n.delete-icon {\n  margin-right: 5px;\n  color: #fff;\n}\n\n.edit-icon {\n  color: #fff;\n}\n"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/components/TodoList.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1644018769225,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1644019449045,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,9 +41,9 @@\n   };\n \n   return (\n     <>\n-      <h1>What's the Plan for Today?</h1>\n+      <h1>Start planning tour day</h1>\n       <TodoForm onSubmit={addTodo} />\n       <Todo\n         todos={todos}\n         completeTodo={completeTodo}\n"
+                }
+            ],
+            "date": 1644018769225,
+            "name": "Commit-0",
+            "content": "import React, { useState } from 'react';\nimport TodoForm from './TodoForm';\nimport Todo from './Todo';\n\nfunction TodoList() {\n  const [todos, setTodos] = useState([]);\n\n  const addTodo = todo => {\n    if (!todo.text || /^\\s*$/.test(todo.text)) {\n      return;\n    }\n\n    const newTodos = [todo, ...todos];\n\n    setTodos(newTodos);\n    console.log(...todos);\n  };\n\n  const updateTodo = (todoId, newValue) => {\n    if (!newValue.text || /^\\s*$/.test(newValue.text)) {\n      return;\n    }\n\n    setTodos(prev => prev.map(item => (item.id === todoId ? newValue : item)));\n  };\n\n  const removeTodo = id => {\n    const removedArr = [...todos].filter(todo => todo.id !== id);\n\n    setTodos(removedArr);\n  };\n\n  const completeTodo = id => {\n    let updatedTodos = todos.map(todo => {\n      if (todo.id === id) {\n        todo.isComplete = !todo.isComplete;\n      }\n      return todo;\n    });\n    setTodos(updatedTodos);\n  };\n\n  return (\n    <>\n      <h1>What's the Plan for Today?</h1>\n      <TodoForm onSubmit={addTodo} />\n      <Todo\n        todos={todos}\n        completeTodo={completeTodo}\n        removeTodo={removeTodo}\n        updateTodo={updateTodo}\n      />\n    </>\n  );\n}\n\nexport default TodoList;"
+        }
+    ]
+}

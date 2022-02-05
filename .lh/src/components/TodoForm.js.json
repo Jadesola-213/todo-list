@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/components/TodoForm.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1644018644906,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1644018794879,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,61 @@\n-rfce\n\\ No newline at end of file\n+import React, { useState, useEffect, useRef } from 'react';\n+\n+function TodoForm(props) {\n+  const [input, setInput] = useState(props.edit ? props.edit.value : '');\n+\n+  const inputRef = useRef(null);\n+\n+  useEffect(() => {\n+    inputRef.current.focus();\n+  });\n+\n+  const handleChange = e => {\n+    setInput(e.target.value);\n+  };\n+\n+  const handleSubmit = e => {\n+    e.preventDefault();\n+\n+    props.onSubmit({\n+      id: Math.floor(Math.random() * 10000),\n+      text: input\n+    });\n+    setInput('');\n+  };\n+\n+  return (\n+    <form onSubmit={handleSubmit} className='todo-form'>\n+      {props.edit ? (\n+        <>\n+          <input\n+            placeholder='Update your item'\n+            value={input}\n+            onChange={handleChange}\n+            name='text'\n+            ref={inputRef}\n+            className='todo-input edit'\n+          />\n+          <button onClick={handleSubmit} className='todo-button edit'>\n+            Update\n+          </button>\n+        </>\n+      ) : (\n+        <>\n+          <input\n+            placeholder='Add a todo'\n+            value={input}\n+            onChange={handleChange}\n+            name='text'\n+            className='todo-input'\n+            ref={inputRef}\n+          />\n+          <button onClick={handleSubmit} className='todo-button'>\n+            Add todo\n+          </button>\n+        </>\n+      )}\n+    </form>\n+  );\n+}\n+\n+export default TodoForm;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1644019511271,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,9 +41,9 @@\n         </>\n       ) : (\n         <>\n           <input\n-            placeholder='Add a todo'\n+            placeholder='Add a task'\n             value={input}\n             onChange={handleChange}\n             name='text'\n             className='todo-input'\n"
+                }
+            ],
+            "date": 1644018644906,
+            "name": "Commit-0",
+            "content": "rfce"
+        }
+    ]
+}

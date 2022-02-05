@@ -1,0 +1,38 @@
+{
+    "sourceFile": "src/components/Todo.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 5,
+            "patches": [
+                {
+                    "date": 1644018813438,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1644018996641,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,5 +42,5 @@\n     </div>\n   ));\n };\n \n-export default Todo;\n\\ No newline at end of file\n+export default Todo;npm start\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1644019850440,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React, { useState } from 'react';\n import TodoForm from './TodoForm';\n-import { RiCloseCircleLine } from 'react-icons/ri';\n+import { ImBin } from 'react-icons/ri';\n import { TiEdit } from 'react-icons/ti';\n \n const Todo = ({ todos, completeTodo, removeTodo, updateTodo }) => {\n   const [edit, setEdit] = useState({\n@@ -42,5 +42,5 @@\n     </div>\n   ));\n };\n \n-export default Todo;npm start\n\\ No newline at end of file\n+export default Todo;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1644019856376,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React, { useState } from 'react';\n import TodoForm from './TodoForm';\n-import { ImBin } from 'react-icons/ri';\n+import { ImBin } from 'react-icons/Im';\n import { TiEdit } from 'react-icons/ti';\n \n const Todo = ({ todos, completeTodo, removeTodo, updateTodo }) => {\n   const [edit, setEdit] = useState({\n"
+                },
+                {
+                    "date": 1644019875325,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n       <div key={todo.id} onClick={() => completeTodo(todo.id)}>\n         {todo.text}\n       </div>\n       <div className='icons'>\n-        <RiCloseCircleLine\n+        <ImBin\n           onClick={() => removeTodo(todo.id)}\n           className='delete-icon'\n         />\n         <TiEdit\n"
+                },
+                {
+                    "date": 1644019903294,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React, { useState } from 'react';\n import TodoForm from './TodoForm';\n-import { ImBin } from 'react-icons/Im';\n+import { ImBin } from 'react-icons/ri';\n import { TiEdit } from 'react-icons/ti';\n \n const Todo = ({ todos, completeTodo, removeTodo, updateTodo }) => {\n   const [edit, setEdit] = useState({\n@@ -29,9 +29,9 @@\n       <div key={todo.id} onClick={() => completeTodo(todo.id)}>\n         {todo.text}\n       </div>\n       <div className='icons'>\n-        <ImBin\n+        <RiCloseCircleLine\n           onClick={() => removeTodo(todo.id)}\n           className='delete-icon'\n         />\n         <TiEdit\n"
+                }
+            ],
+            "date": 1644018813438,
+            "name": "Commit-0",
+            "content": "import React, { useState } from 'react';\nimport TodoForm from './TodoForm';\nimport { RiCloseCircleLine } from 'react-icons/ri';\nimport { TiEdit } from 'react-icons/ti';\n\nconst Todo = ({ todos, completeTodo, removeTodo, updateTodo }) => {\n  const [edit, setEdit] = useState({\n    id: null,\n    value: ''\n  });\n\n  const submitUpdate = value => {\n    updateTodo(edit.id, value);\n    setEdit({\n      id: null,\n      value: ''\n    });\n  };\n\n  if (edit.id) {\n    return <TodoForm edit={edit} onSubmit={submitUpdate} />;\n  }\n\n  return todos.map((todo, index) => (\n    <div\n      className={todo.isComplete ? 'todo-row complete' : 'todo-row'}\n      key={index}\n    >\n      <div key={todo.id} onClick={() => completeTodo(todo.id)}>\n        {todo.text}\n      </div>\n      <div className='icons'>\n        <RiCloseCircleLine\n          onClick={() => removeTodo(todo.id)}\n          className='delete-icon'\n        />\n        <TiEdit\n          onClick={() => setEdit({ id: todo.id, value: todo.text })}\n          className='edit-icon'\n        />\n      </div>\n    </div>\n  ));\n};\n\nexport default Todo;"
+        }
+    ]
+}
